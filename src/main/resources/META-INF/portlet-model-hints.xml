@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.liferay.reestrRayonov.model.Rayon">
+		<field name="rayonId" type="long" />
+		<field name="name" type="String" />
+		<field name="kod" type="int" />
+		<field name="archive" type="boolean" />
+	</model>
+</model-hints>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.liferay.reestrRayonov.model.Rayon" />
+	<class name="com.liferay.reestrRayonov.model.impl.RayonImpl" table="RR_Rayon">
+		<cache usage="read-write" />
+		<id name="rayonId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="kod" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="archive" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+</hibernate-mapping>
